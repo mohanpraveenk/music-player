@@ -10,13 +10,14 @@
   margin: 0;
 }
 :root{
-  --violet: #a66cff;
-  --lightblue:#b1e1ff;
-  --lightblack: #5f6063;
+  --violet: #B983FF;
+  --lightblue:#99FEFF;
+  --darkviolet:#9400FF;
+  --lightblack: #1b1b1b;
   --white: #ffffff;
   --darkwhite: #cecaca;
   --pinkshadow: #9c9efe;
-  --lightbshadow: #bd42ff;
+  --lightbshadow: #A66CFF;
 }
 body{
   display: flex;
@@ -30,9 +31,44 @@ body{
   padding: 25px 30px;
   overflow: hidden;
   position: relative;
-  border-radius: 15px;
-  background: var(--white);
-  box-shadow: 0px 6px 15px var(--lightbshadow);
+  border-radius: 20px;
+  
+  
+  box-shadow: 3px 3px 5px  var(--white),
+              -3px -3px -5px var(--white);
+  backdrop-filter: blur(2px);
+  border-left: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  opacity: .9;
+}
+
+body::before{
+  content: '';
+  position: absolute;
+  bottom: 3%;
+  left: 34%;
+  width: 100px;
+  height: 100px;
+  background: var(--lightbshadow);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: .6;
+
+}
+body::after{
+  content: '';
+  position: absolute;
+  top: 1%;
+  right: 31%;
+  width: 150px;
+  height: 150px;
+  background: var(--lightbshadow);
+  border-radius: 100%;
+  z-index: -1;
+  opacity: .9;
+
 }
 .musicplayer i{
   cursor: pointer;
@@ -81,13 +117,13 @@ body{
   font-size: 18px;
   opacity: 0.9;
   line-height: 35px;
-  color: var(--violet);
+  color: var(--darkviolet);
 }
 .music-area{
   height: 6px;
   width: 100%;
   border-radius: 50px;
-  background: #f0f0f0;
+  background: #e3e3e3;
   cursor: pointer;
 }
 .music-area .music-bar{
@@ -95,7 +131,7 @@ body{
   width: 0%;
   position: relative;
   border-radius: inherit;
-  background: linear-gradient(90deg, var(--lightblue) 0%, var(--violet) 100%);
+  background: linear-gradient(90deg, var(--darkviolet) 0%, var(--violet) 100%);
 }
 .music-bar::before{
   content: "";
@@ -129,7 +165,7 @@ body{
 .controls i{
   font-size: 28px;
   user-select: none;
-  background: linear-gradient(var(--violet) 0%, var(--lightblue) 100%);
+  background: linear-gradient(var(--violet) 0%, var(--darkviolet) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -161,7 +197,7 @@ body{
   height: 43px;
   width: 43px;
   border-radius: inherit;
-  background: linear-gradient(var(--lightblue) 0%, var(--violet) 100%);
+  background: linear-gradient(var(--darkviolet) 0%, var(--violet) 100%);
 }
 .play-pause i{
   height: 43px;
