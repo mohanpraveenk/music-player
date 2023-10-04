@@ -46,7 +46,8 @@ body{
 
 body::before{
   content: '';
-  position: relative;
+  position: absolute;
+  flex: 1 0 auto;
   bottom: 10%;
   left: 2%;
   width: 100px;
@@ -59,7 +60,8 @@ body::before{
 }
 body::after{
   content: '';
-  position: relative;
+  position: absolute;
+  flex: 1 0 auto;
   top: 10%;
   right: 2%;
   width: 150px;
