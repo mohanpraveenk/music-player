@@ -27,8 +27,8 @@ let allMusic=[
 {
   name:"Naan Un Song by Arijit Singh and Chinmayi ",
   genre:"melody 💞 ",
-  img:"24",
-  src:"24"
+  img:"naan",
+  src:"naan"
 },
 {
   name:"Ambikapathy - Music by: A.R.Rahman",

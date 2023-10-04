@@ -24,7 +24,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(var(--violet) 0%, var(--lightblue) 100%);
+  background: linear-gradient( to bottom right,var(--violet) 0%, var(--lightblue) 100%);
 }
 .musicplayer{
   width: 380px;
@@ -46,12 +46,12 @@ body{
 
 body::before{
   content: '';
-  position: absolute;
-  bottom: 3%;
-  left: 34%;
+  position: relative;
+  bottom: 10%;
+  left: 2%;
   width: 100px;
   height: 100px;
-  background: var(--lightbshadow);
+  background:  linear-gradient( to bottom right,var(--lightblue) 0%, var(--darkviolet) 100%);
   border-radius: 50%;
   z-index: -1;
   opacity: .6;
@@ -59,12 +59,12 @@ body::before{
 }
 body::after{
   content: '';
-  position: absolute;
-  top: 1%;
-  right: 31%;
+  position: relative;
+  top: 10%;
+  right: 2%;
   width: 150px;
   height: 150px;
-  background: var(--lightbshadow);
+  background: linear-gradient( to bottom right,var(--lightblue) 0%, var(--darkviolet) 100%);
   border-radius: 100%;
   z-index: -1;
   opacity: .9;
