@@ -75,24 +75,13 @@ body::after{
 .musicplayer i{
   cursor: pointer;
 }
-.top, .music-area .timer, 
+ .music-area .timer, 
 .controls, .music-list .header, .music-list ul li{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.top i{
-  font-size: 30px;
-  color: var(--lightblack);
-}
-.top i:first-child{
-  margin-left: -7px;
-}
-.top span{
-  font-size: 18px;
-  margin-left: -3px;
-  color: var(--lightblack);
-}
+
 .img{
   width: 100%;
   height: 256px;
